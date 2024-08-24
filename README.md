@@ -126,7 +126,7 @@ Mould King Servos by default have only 3 fixed positions (-90, 0 and +90 rotatio
 - Sending correct PWM signals to MK Servo
 - Disconnecting power supply from the motor when it does not need to rotate, and connecting the power again before moving to a new position
 
-To achive this, the hardware setup contatins N-channel MOSFETs, alogn with some resistors (100 Ohm and 10 kOhm). You can choose any N-channel MOSFET that can be driven by 3.3V logic. To reduce soldering time, you can use power control circuit just for one motor, and connect GND pin of the second motor directly to PCB's GND.
+To achive this, the hardware setup contatins N-channel MOSFETs, along with some resistors (100 Ohm and 10 kOhm). You can choose any N-channel MOSFET that can be driven by 3.3V logic. To reduce soldering time, you can use power control circuit just for one motor, and connect GND pin of the second motor directly to PCB's GND.
 
 More details about this solution in [my video on Youtube](https://www.youtube.com/watch?v=5rQFQ2EFzqE&t=612s)
 
