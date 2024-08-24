@@ -24,7 +24,7 @@ For basic use of Power Functions motors you will need:
 
 ![Basic usage!](https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/basic_usage.png "Basic usage")
 
-Add the following code to your sketch
+Add the following code to your sketch:
 
 ```CPP
 // library includes
@@ -66,8 +66,44 @@ motor.update_motor(speed_control,brake);
 ```
 
 # GeekServo
-LM7805 optional
-code
+GeekServo is a standard 3-wire Servo with Technic bricks compatible housing. By specification, GeekServo has 3.3V to 6V operating voltage, so you will need a voltage regulator. Unofficially, GeekServo can be powered directly with 2S (7.4V) LiPo battery **(but use this setup at your own risk)**. 
+
+![GeekServo!](https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/geek_servo.png "GeekServo")
+
+Code:
+```CPP
+// library includes
+#include <PFMotor.h>
+
+// default pins
+#include <PinConfig.h>
+
+// if your isntallation is using different pinout, copy the default config to your project and redefine pins
+// #include "PinConfig.h"
+
+// define motor instance
+GeekServo servo;
+
+void setup() {
+...
+// basic setup for a servo with 1000..2000 microseconds signals for -90..+90 rotation
+servo.begin(GEEK_SERVO);
+
+// GeekServo 360 supports wider range: 500..2500 microsecdons for -180..+180 rotation
+servo.begin(GEEK_SERVO,500,2500);
+...
+}
+
+void loop() {
+...
+// any value in -1.0 .. +1.0 range
+// positive/negative values set rotation direction.
+// for a servo: 1.0 = maximum rotation, 0.5 = half rotation, 0 = zero position, -1.0 = -maximum rotation in other direction
+double rotation = 1.0; 
+servo.update_motor(rotation); 
+...
+}
+```
 
 # Mould King Servo
 transistor (only 1)
