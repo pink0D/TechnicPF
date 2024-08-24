@@ -12,7 +12,7 @@ The example included in this library is for demonstration purposes only. **The e
 * [Library istallation](#library-istallation)
 * [Basic Power Functions motors](#basic-power-functions-motors)
 * [GeekServo](#geekservo)
-* [Mould King Servo](#mould-king-servo)
+* [Mould King Servo proportional control](#mould-king-servo-proportional-control)
 * [Bluetooth gamepad controller example](#bluetooth-gamepad-controller-example)
 
 # Supported motors
@@ -120,7 +120,7 @@ servo.update_motor(rotation);
 }
 ```
 
-# Mould King Servo
+# Mould King Servo proportional control
 Mould King Servos by default have only 3 fixed positions (-90, 0 and +90 rotation) when connected to control hubs. However, by sending a correct PWM signal, it is possible to make it rotate in a proportional way. There are also some side effects, including motor fluttering and hence significant power drain. This library provides a solution for proportional control of Mould King Servo Motor:
 
 - Sending correct PWM signals to MK Servo
