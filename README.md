@@ -89,7 +89,7 @@ void setup() {
 // basic setup for a servo with 1000..2000 microseconds signals for -90..+90 rotation
 servo.begin(GEEK_SERVO);
 
-// GeekServo 360 supports wider range: 500..2500 microsecdons for -180..+180 rotation
+// GeekServo 360 supports wider range: 500..2500 microseconds for -180..+180 rotation
 // servo.begin(GEEK_SERVO,500,2500);
 ...
 }
