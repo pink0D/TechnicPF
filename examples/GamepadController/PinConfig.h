@@ -10,7 +10,7 @@
 #ifndef _PinConfig_h
 #define _PinConfig_h
 
-#include "PFMotor.h"
+#include <PFMotor.h>
 
 /*
 Pro Mini Pins
