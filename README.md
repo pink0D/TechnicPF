@@ -1,5 +1,7 @@
 # About
 TechnicPF is an Arduino library for controlling Power Functions motors. 
+(C) Dmitry Akulov
+Contacts: [pink0D.github@gmail.com](mailto:pink0D.github@gmail.com)
 
 # Important information
 The example included in this library is for demonstration purposes only. **The example hardware and the library itself DO NOT INCLUDE any kind of battery discharge protection.** Since electric motors consume quite a lot of power, this can lead to permament damage to Li-ion/LiPo batteries if there's no such protection. **For a real application please consider adding discharge control or use batteries with integrated protection curcuit.**
@@ -21,6 +23,10 @@ For basic use of Power Functions motors you will need:
 - TB6612FNG motor driver
 - 7.4V LiPo battery
 - Any PF compatible motors
+
+More details on Power Functions and PF-plug pinout are available on Philo's site:
+- [Power Functions presentation](https://www.philohome.com/pf/pf.htm)
+- [Power Functions Servomotor](https://www.philohome.com/pfservo/pfservo.htm)
 
 ![Basic usage!](https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/basic_usage.png "Basic usage")
 
@@ -165,6 +171,8 @@ Components required:
 To reduce soldering time, you can:
 - exclude LM7805 if you do not plan to use the GeekServo (or if you will use direct 7.4V power supply for it)
 - include only one power control circuit for PF motors or even connect PF motors directly to PCB's GND if you do not need proportional control fo Mould King Servos
+
+More examples for other Bluetooth gamepads are available in [USB_Host_Shield_2.0 library](https://github.com/felis/USB_Host_Shield_2.0)
 
 ![Full version!](https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/full_version.png "Full version")
 
