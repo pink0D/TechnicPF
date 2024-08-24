@@ -1,5 +1,6 @@
 # About
 TechnicPF is an Arduino library for controlling Power Functions motors. 
+
 Author: Dmitry Akulov [pink0D.github@gmail.com](mailto:pink0D.github@gmail.com)
 
 # Important information
@@ -12,7 +13,7 @@ The example included in this library is for demonstration purposes only. **The e
 * [Basic Power Functions motors](#basic-power-functions-motors)
 * [GeekServo](#geekservo)
 * [Mould King Servo](#mould-king-servo)
-* [Bluetooth controller example](#bluetooth-gamepad-controller-example)
+* [Bluetooth gamepad controller example](#bluetooth-gamepad-controller-example)
 
 # Supported motors
 The library supports several types of motors:
