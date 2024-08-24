@@ -10,7 +10,7 @@ The library supports several types of motors:
 - PF Simple motors (M/L/XL-motors)
 - PF Servo Motors (which usually have only 3 positions: -90 / 0 / +90)
 - Mould King Servo motors (which normally also have just 3 positions, however this library introduces support for fully proportional steering)
-- GeekServo (Technic-compatilbe motors with 3-wire plug)
+- GeekServo (Technic-compatible motors with 3-wire plug)
 
 # Library istallation
 
@@ -18,7 +18,7 @@ The library supports several types of motors:
 Motor driver + L298N variant
 code
 
-# Mould king 
+# Mould King Servo
 transistor
 code
 PoC video
