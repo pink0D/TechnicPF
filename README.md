@@ -13,10 +13,58 @@ The library supports several types of motors:
 - GeekServo (Technic-compatible motors with 3-wire plug)
 
 # Library istallation
+Copy contents of this repo to *<Worspace folder>/libraries/TechnicPF* 
 
-# Basic usage
-Motor driver 
-code
+# Basic Power Functions motors
+For basic use of Power Functions motors you will need:
+- Arduino Board
+- TB6612FNG motor driver
+- 7.4V LiPo battery
+- Any PF compatible motors
+(https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/basic_usage.png "Basic usage")
+
+Add the following code to your sketch
+
+```CPP
+// library includes
+#include "PFMotor.h"
+#include "GeekServo.h"
+#include "MKServo.h"
+
+// default pins
+#include <PinConfig.h>
+
+// if your isntallation is using different pinout, copy the default config to your project and redefine pins
+// #include "PinConfig.h"
+
+// define motor instance
+PFMotor motor;
+
+void setup() {
+...
+motor.begin(MOTOR_A);
+
+// when using original PF motors, this option is recommended both for Servo and M/L/XL motors
+//motor.begin(MOTOR_A, PWM_FIXED_15_POSITIONS); // PF with 15-positions (almost proportional)
+
+// when using PF-compatible servo-motor, this option is recommended to avoid fluttering and power drain issues
+//motor.begin(MOTOR_A, PWM_FIXED_3_POSITIONS);  // PF with 3-positions  (-90 / 0 / +90)
+
+...
+}
+
+void loop() {
+...
+// when needed, set motor rotation speed:
+// any value in -1.0 .. +1.0 range, 1.0 = full speed, 0.5 = half speed, zero value (0.0) stops the motor
+// positive/negative values set rotation direction.
+// for a servo: 1.0 = 90 degree rotation, 0.5 = 45 degree rotation, 0 = zero position, -1.0 = -90 degree rotation
+double speed_control = 1.0; 
+bool brake = false; // set to true to brake the motor (the driver shorts motor brushes which results to a fast stop)
+motor.update_motor(speed_control,brake); 
+...
+}
+```
 
 # GeekServo
 LM7805 optional
