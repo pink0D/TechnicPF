@@ -2,7 +2,7 @@
 TechnicPF is an Arduino library for controlling Power Functions motors. 
 
 # Important information
-The example included in this library is for demonstration purposes only. **The example hardware and the library itself DO NOT INCLUDE any kind of battery discharge protection.** Since electric motors consume quite a lot of power, this can lead to permament damage to Li-ion/LiPo batteries if there's no such protection. **For a real application please consider adding discharge control or use a batteries with integrated protection curcuit.**
+The example included in this library is for demonstration purposes only. **The example hardware and the library itself DO NOT INCLUDE any kind of battery discharge protection.** Since electric motors consume quite a lot of power, this can lead to permament damage to Li-ion/LiPo batteries if there's no such protection. **For a real application please consider adding discharge control or use batteries with integrated protection curcuit.**
 
 # Supported motors
 The library supports several types of motors:
