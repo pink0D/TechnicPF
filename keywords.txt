@@ -1,0 +1,30 @@
+####################################################
+# Syntax Coloring Map For TechnicPF Library
+####################################################
+
+####################################################
+# Datatypes (KEYWORD1)
+####################################################
+
+TechnicMotor		KEYWORD1
+PFMotor			KEYWORD1
+GeekServo		KEYWORD1
+MKServo			KEYWORD1
+
+####################################################
+# Methods and Functions (KEYWORD2)
+####################################################
+begin			KEYWORD2
+update_motor		KEYWORD2
+set_pwm_type		KEYWORD2
+power_on		KEYWORD2
+power_off		KEYWORD2
+                        
+####################################################
+# Constants and enums (LITERAL1)
+####################################################
+MOTOR_A			LITERAL1
+MOTOR_B                 LITERAL1
+GEEK_SERVO              LITERAL1
+MOTOR_DRIVER_TB6612FNG  LITERAL1
+MOTOR_DRIVER_L298N      LITERAL1
