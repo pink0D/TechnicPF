@@ -21,15 +21,14 @@ For basic use of Power Functions motors you will need:
 - TB6612FNG motor driver
 - 7.4V LiPo battery
 - Any PF compatible motors
+
 (https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/basic_usage.png "Basic usage")
 
 Add the following code to your sketch
 
 ```CPP
 // library includes
-#include "PFMotor.h"
-#include "GeekServo.h"
-#include "MKServo.h"
+#include <PFMotor.h>
 
 // default pins
 #include <PinConfig.h>
