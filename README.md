@@ -1,10 +1,18 @@
 # About
 TechnicPF is an Arduino library for controlling Power Functions motors. 
-(C) Dmitry Akulov
-Contacts: [pink0D.github@gmail.com](mailto:pink0D.github@gmail.com)
+Author: Dmitry Akulov [pink0D.github@gmail.com](mailto:pink0D.github@gmail.com)
 
 # Important information
 The example included in this library is for demonstration purposes only. **The example hardware and the library itself DO NOT INCLUDE any kind of battery discharge protection.** Since electric motors consume quite a lot of power, this can lead to permament damage to Li-ion/LiPo batteries if there's no such protection. **For a real application please consider adding discharge control or use batteries with integrated protection curcuit.**
+
+# Table of contents
+
+* [Supported motors](#supported-motors)
+* [Library istallation](#library-istallation)
+* [Basic Power Functions motors](#basic-power-functions-motors)
+* [GeekServo](#geekservo)
+* [Mould King Servo](#mould-king-servo)
+* [Bluetooth controller example](#bluetooth-gamepad-controller-example)
 
 # Supported motors
 The library supports several types of motors:
@@ -155,7 +163,7 @@ servo.update_motor(rotation);
 }
 ```
 
-# Full example
+# Bluetooth gamepad controller example
 [Demo video on Youtube](https://www.youtube.com/watch?v=hfu11bIr1LA)
 The example project demostrates how to use the library and control Technic motors with a Bluetooth gamepad.
 Components required:
