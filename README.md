@@ -166,6 +166,7 @@ servo.update_motor(rotation);
 
 # Bluetooth gamepad controller example
 [Demo video on Youtube](https://www.youtube.com/watch?v=hfu11bIr1LA)
+
 The example project demostrates how to use the library and control Technic motors with a Bluetooth gamepad.
 Components required:
 - Arduino Pro Mini 3.3V
