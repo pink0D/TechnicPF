@@ -13,7 +13,7 @@ The library supports several types of motors:
 - GeekServo (Technic-compatible motors with 3-wire plug)
 
 # Library istallation
-Copy contents of this repo to *<Worspace folder>/libraries/TechnicPF* 
+Copy contents of this repo to *<Worspace* *folder>/libraries/TechnicPF* 
 
 # Basic Power Functions motors
 For basic use of Power Functions motors you will need:
