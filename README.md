@@ -22,7 +22,7 @@ For basic use of Power Functions motors you will need:
 - 7.4V LiPo battery
 - Any PF compatible motors
 
-(https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/basic_usage.png "Basic usage")
+![Basic usage!](https://raw.githubusercontent.com/pink0D/TechnicPF/main/wiring/basic_usage.png "Basic usage")
 
 Add the following code to your sketch
 
