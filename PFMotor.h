@@ -12,12 +12,12 @@
 
 #include "TechnicMotor.h"
 
-#define MOTOR_DRIVER_TB6612FNG 0
-#define MOTOR_DRIVER_L298N     1
+#define MOTOR_DRIVER_TB6612FNG      0
+#define MOTOR_DRIVER_L298N_MINI     1
 
-#define PWM_PROPORTIONAL        0
-#define PWM_FIXED_3_POSITIONS   1
-#define PWM_FIXED_15_POSITIONS  2
+#define PWM_PROPORTIONAL            0
+#define PWM_FIXED_3_POSITIONS       1
+#define PWM_FIXED_15_POSITIONS      2
 
 struct PFMotorPinConfig {
   int driver_type;
@@ -48,7 +48,7 @@ private:
   int pin_power_ctl;
 
   void output_pwm_TB6612FNG(double c1, double c2, bool brake);
-  void output_pwm_L298N(double c1, double c2, bool brake);
+  void output_pwm_L298N_mini(double c1, double c2, bool brake);
 
   double convert_pwm_3(double c);
   double convert_pwm_15(double c);

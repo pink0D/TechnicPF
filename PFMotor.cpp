@@ -79,7 +79,7 @@ void PFMotor::output_pwm_TB6612FNG(double c1, double c2, bool brake) {
   analogWrite(pin_pwm, out_pwm * 255);
 }
 
-void PFMotor::output_pwm_L298N(double c1, double c2, bool brake) {
+void PFMotor::output_pwm_L298N_mini(double c1, double c2, bool brake) {
   
   if (brake) {
     digitalWrite(pin_c1, HIGH);
@@ -129,8 +129,8 @@ void PFMotor::update_output(double new_c1, double new_c2, bool brake) {
   if (driver_type == MOTOR_DRIVER_TB6612FNG)
     output_pwm_TB6612FNG(new_c1, new_c2, brake);
 
-  if (driver_type == MOTOR_DRIVER_L298N)
-    output_pwm_L298N(new_c1, new_c2, brake);
+  if (driver_type == MOTOR_DRIVER_L298N_MINI)
+    output_pwm_L298N_mini(new_c1, new_c2, brake);
 }
 
 double PFMotor::convert_pwm_3(double c){
