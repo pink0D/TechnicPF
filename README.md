@@ -6,7 +6,7 @@ Author: Dmitry Akulov [pink0D.github@gmail.com](mailto:pink0D.github@gmail.com)
 # Table of contents
 
 * [Supported motors](#supported-motors)
-* [Library istallation](#library-istallation)
+* [Library installation](#library-installation)
 * [Basic Power Functions motors](#basic-power-functions-motors)
 * [GeekServo](#geekservo)
 * [Mould King Servo proportional control](#mould-king-servo-proportional-control)
@@ -19,7 +19,7 @@ The library supports several types of motors:
 - Mould King Servo motors (which normally also have just 3 positions, however this library introduces support for fully proportional steering)
 - GeekServo (Technic-compatible motors with 3-wire plug)
 
-# Library istallation
+# Library installation
 Copy contents of this repo to *<Worspace* *folder>/libraries/TechnicPF* 
 
 # Basic Power Functions motors
