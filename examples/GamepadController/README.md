@@ -1,3 +1,6 @@
+# Update
+There's a new example for controlling GeekServo's with a Bluetooh gamepad: [GeekShield](https://github.com/pink0D/GeekShield)
+
 # Important notice
 This example is for demonstration purposes only. 
 **The example hardware and the library itself DO NOT INCLUDE any kind of battery discharge protection.** 
