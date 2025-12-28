@@ -1,7 +1,11 @@
 # About
 TechnicPF is an Arduino library for controlling Power Functions motors. 
+This repository is no longer maintained.
 
-For an end-to-end Arduino solution for remote control of Power Functions motors, please consider the [GeekShield](https://github.com/pink0D/GeekShield/).
+Consider other repositories:
+- [MouldKingino](https://github.com/pink0D/MouldKingino) - Arduino library for Mould King remote control with ESP32 Bluetooth
+- [M5Bluepad](https://github.com/pink0D/M5Bluepad) - Arduino library for easy integration of M5Stack Units and Bluetooth gamepads
+- [GeekShield](https://github.com/pink0D/GeekShield/) - High power shield for Power Function Motors
 
 Author: Dmitry Akulov [pink0D.github@gmail.com](mailto:pink0D.github@gmail.com)
 
